@@ -7,31 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E16B9931F66DB4F0007AEC4 /* MobileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16B9921F66DB4F0007AEC4 /* MobileAPI.swift */; };
+		1E16B99B1F66E80F0007AEC4 /* ModuluxMobileApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16B99A1F66E80F0007AEC4 /* ModuluxMobileApiTests.swift */; };
+		1E16B99D1F66E80F0007AEC4 /* ModuluxMobileApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E24E72F1F661EFA007442C5 /* ModuluxMobileApi.framework */; };
 		1E24E7341F661EFA007442C5 /* ModuluxMobileApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E24E7321F661EFA007442C5 /* ModuluxMobileApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C093CAC2E0C3EDDFF4BFC0C /* Pods_ModuluxMobileApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2CF8AB26D82441B62C02D0 /* Pods_ModuluxMobileApi.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1E16B99E1F66E80F0007AEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E24E7261F661EFA007442C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E24E72E1F661EFA007442C5;
+			remoteInfo = ModuluxMobileApi;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1E16B9921F66DB4F0007AEC4 /* MobileAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAPI.swift; sourceTree = "<group>"; };
+		1E16B9981F66E80F0007AEC4 /* ModuluxMobileApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuluxMobileApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E16B99A1F66E80F0007AEC4 /* ModuluxMobileApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuluxMobileApiTests.swift; sourceTree = "<group>"; };
+		1E16B99C1F66E80F0007AEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E24E72F1F661EFA007442C5 /* ModuluxMobileApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuluxMobileApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E24E7321F661EFA007442C5 /* ModuluxMobileApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuluxMobileApi.h; sourceTree = "<group>"; };
 		1E24E7331F661EFA007442C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43880B1B9B96C22E8C7F9070 /* Pods-ModuluxMobileApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuluxMobileApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuluxMobileApi/Pods-ModuluxMobileApi.release.xcconfig"; sourceTree = "<group>"; };
+		EA4095217DD993174C04EC84 /* Pods-ModuluxMobileApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuluxMobileApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuluxMobileApi/Pods-ModuluxMobileApi.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2CF8AB26D82441B62C02D0 /* Pods_ModuluxMobileApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuluxMobileApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E16B9951F66E80F0007AEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E16B99D1F66E80F0007AEC4 /* ModuluxMobileApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E24E72B1F661EFA007442C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C093CAC2E0C3EDDFF4BFC0C /* Pods_ModuluxMobileApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E16B9991F66E80F0007AEC4 /* ModuluxMobileApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E16B99A1F66E80F0007AEC4 /* ModuluxMobileApiTests.swift */,
+				1E16B99C1F66E80F0007AEC4 /* Info.plist */,
+			);
+			path = ModuluxMobileApiTests;
+			sourceTree = "<group>";
+		};
 		1E24E7251F661EFA007442C5 = {
 			isa = PBXGroup;
 			children = (
 				1E24E7311F661EFA007442C5 /* ModuluxMobileApi */,
+				1E16B9991F66E80F0007AEC4 /* ModuluxMobileApiTests */,
 				1E24E7301F661EFA007442C5 /* Products */,
+				EFCF3E7EF6CAFCD0D0CCA6BA /* Pods */,
+				E1A0D4B10BB347B406E08B0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				1E24E72F1F661EFA007442C5 /* ModuluxMobileApi.framework */,
+				1E16B9981F66E80F0007AEC4 /* ModuluxMobileApiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +91,26 @@
 			children = (
 				1E24E7321F661EFA007442C5 /* ModuluxMobileApi.h */,
 				1E24E7331F661EFA007442C5 /* Info.plist */,
+				1E16B9921F66DB4F0007AEC4 /* MobileAPI.swift */,
 			);
 			path = ModuluxMobileApi;
+			sourceTree = "<group>";
+		};
+		E1A0D4B10BB347B406E08B0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CF8AB26D82441B62C02D0 /* Pods_ModuluxMobileApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFCF3E7EF6CAFCD0D0CCA6BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA4095217DD993174C04EC84 /* Pods-ModuluxMobileApi.debug.xcconfig */,
+				43880B1B9B96C22E8C7F9070 /* Pods-ModuluxMobileApi.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,14 +127,34 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1E16B9971F66E80F0007AEC4 /* ModuluxMobileApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E16B9A21F66E80F0007AEC4 /* Build configuration list for PBXNativeTarget "ModuluxMobileApiTests" */;
+			buildPhases = (
+				1E16B9941F66E80F0007AEC4 /* Sources */,
+				1E16B9951F66E80F0007AEC4 /* Frameworks */,
+				1E16B9961F66E80F0007AEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E16B99F1F66E80F0007AEC4 /* PBXTargetDependency */,
+			);
+			name = ModuluxMobileApiTests;
+			productName = ModuluxMobileApiTests;
+			productReference = 1E16B9981F66E80F0007AEC4 /* ModuluxMobileApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1E24E72E1F661EFA007442C5 /* ModuluxMobileApi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E24E7371F661EFA007442C5 /* Build configuration list for PBXNativeTarget "ModuluxMobileApi" */;
 			buildPhases = (
+				1A8BDB850E369ED381531BC2 /* [CP] Check Pods Manifest.lock */,
 				1E24E72A1F661EFA007442C5 /* Sources */,
 				1E24E72B1F661EFA007442C5 /* Frameworks */,
 				1E24E72C1F661EFA007442C5 /* Headers */,
 				1E24E72D1F661EFA007442C5 /* Resources */,
+				8718879FBB4425050AB39235 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,11 +171,17 @@
 		1E24E7261F661EFA007442C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Modulux Studio";
 				TargetAttributes = {
+					1E16B9971F66E80F0007AEC4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					1E24E72E1F661EFA007442C5 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				1E24E72E1F661EFA007442C5 /* ModuluxMobileApi */,
+				1E16B9971F66E80F0007AEC4 /* ModuluxMobileApiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E16B9961F66E80F0007AEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E24E72D1F661EFA007442C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,17 +221,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A8BDB850E369ED381531BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8718879FBB4425050AB39235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModuluxMobileApi/Pods-ModuluxMobileApi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1E16B9941F66E80F0007AEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E16B99B1F66E80F0007AEC4 /* ModuluxMobileApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E24E72A1F661EFA007442C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E16B9931F66DB4F0007AEC4 /* MobileAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1E16B99F1F66E80F0007AEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E24E72E1F661EFA007442C5 /* ModuluxMobileApi */;
+			targetProxy = 1E16B99E1F66E80F0007AEC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1E16B9A01F66E80F0007AEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModuluxMobileApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulux.ModuluxMobileApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1E16B9A11F66E80F0007AEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModuluxMobileApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulux.ModuluxMobileApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		1E24E7351F661EFA007442C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,7 +407,9 @@
 		};
 		1E24E7381F661EFA007442C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4095217DD993174C04EC84 /* Pods-ModuluxMobileApi.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,13 +421,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.modulux.ModuluxMobileApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1E24E7391F661EFA007442C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43880B1B9B96C22E8C7F9070 /* Pods-ModuluxMobileApi.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -277,6 +449,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E16B9A21F66E80F0007AEC4 /* Build configuration list for PBXNativeTarget "ModuluxMobileApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E16B9A01F66E80F0007AEC4 /* Debug */,
+				1E16B9A11F66E80F0007AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1E24E7291F661EFA007442C5 /* Build configuration list for PBXProject "ModuluxMobileApi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -293,6 +473,7 @@
 				1E24E7391F661EFA007442C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
