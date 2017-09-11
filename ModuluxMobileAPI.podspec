@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.source_files  = "ModuluxMobileApi", "ModuluxMobileApi/**/*.{h,m,swift}"
   # s.requires_arc = true
   # s.dependency "JSONKit", "~> 1.4"
-  # s.dependency "Alamofire", "~> 4.4"
+  s.dependency "Alamofire", "~> 4.4"
 end
