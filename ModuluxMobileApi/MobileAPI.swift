@@ -31,7 +31,7 @@ public struct MobileApiError : Swift.Error {
                 return true
             case (.missingOrInvalidStage(let stage1), .missingOrInvalidStage(let stage2)):
                 return stage1 == stage2
-            case (.stageFieldIsNotString(let stage1, let d1), .stageFieldIsNotString(let stage2, let d2)):
+            case (.stageFieldIsNotString(let stage1, _), .stageFieldIsNotString(let stage2, _)):
                 return stage1 == stage2
             default:
                 return false

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ModuluxMobileAPI"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Modulux Mobile Api used for iOS basic behaviours"
   s.description  = "Used for internal use, but feel free to used it anywhere"
   s.homepage     = "https://github.com/lordinferno1/moduluxAPI"
