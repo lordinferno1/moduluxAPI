@@ -24,6 +24,7 @@ class ModuluxMobileApiSetStageTests: XCTestCase {
     
     func testMissingConfigFile() {
         api = try! MobileAPI(configFileName: "inexistentFile")
+        api.isUnitTesting = true
         do {
             try api.setStage(.develop)
         } catch let e as MobileApiError {
@@ -36,6 +37,7 @@ class ModuluxMobileApiSetStageTests: XCTestCase {
     
     func testInvalidConfigFile() {
         api = try! MobileAPI(configFileName: "invalidType")
+        api.isUnitTesting = true
         do {
             try api.setStage(.develop)
         } catch let e as MobileApiError {
@@ -49,6 +51,7 @@ class ModuluxMobileApiSetStageTests: XCTestCase {
     
     func testMissingStage() {
         api = try! MobileAPI(configFileName: "missingStage")
+        api.isUnitTesting = true
         do {
             try api.setStage(.staging)
         } catch let e as MobileApiError {
@@ -71,6 +74,7 @@ class ModuluxMobileApiSetStageTests: XCTestCase {
     
     func testInvalidStageField() {
         api = try! MobileAPI(configFileName: "missingStage")
+        api.isUnitTesting = true
         do {
             try api.setStage(.testing)
         } catch let e as MobileApiError {

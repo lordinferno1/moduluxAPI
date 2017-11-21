@@ -51,6 +51,8 @@ open class MobileAPI {
     
     public static let shared = try! MobileAPI()
     
+    internal var isUnitTesting = false
+    
     private var configFileName : String
     private var apiStage : ApiStage! = nil
     private var baseUrl  : String! = ""
@@ -82,8 +84,7 @@ open class MobileAPI {
         customUrls.removeAll(keepingCapacity: true)
         var dictRoot : NSDictionary?
         
-        //
-        let bundle = Bundle(for: type(of: self))
+        let bundle = isUnitTesting ? Bundle(for: type(of: self)) : Bundle.main
         guard let path = bundle.path(forResource: configFileName, ofType: "plist") else {
             throw MobileApiError(description: "The file \(configFileName).plist doesn't exists", localizedDescription: "MissingMobileApiConfigFile", error: .missingConfigurationFile)
         }
