@@ -110,6 +110,13 @@ open class MobileAPI {
         headers[key] = value
     }
     
+    open func route(customUrl key: String, endPoint: String) -> String? {
+        guard let url = customUrls[key] else {
+            return nil
+        }
+        return String(format: "%@%@",url, endPoint)
+    }
+    
     open func route(_ endPoint: String) -> String {
         if apiStage == nil {
             assertionFailure("❌ apiStage has not been set with setStage(_:)")
