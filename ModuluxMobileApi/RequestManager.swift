@@ -15,11 +15,13 @@ public class RequestManager {
     
     private var requests : [String:DataRequest]?
     
-    public func cancelRequest(forKey key: String) {
+    public func cancelRequest(forKey key: String) -> Bool {
         if let request = requests?[key] {
             request.cancel()
             removeRequest(forKey: key)
+            return true
         }
+        return false
     }
     
     public func removeRequest(forKey key: String) {

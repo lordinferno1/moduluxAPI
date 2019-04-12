@@ -60,7 +60,7 @@ open class MobileAPI {
     private var headers  : [String:String]! = [:]
     private var debugMode = false
     
-    required public init(configFileName fileName: String = "apiInfo", _ debugMode: Bool = false) throws {
+    required public init(configFileName fileName: String = "API", _ debugMode: Bool = false) throws {
         configFileName = fileName
         self.debugMode = debugMode
     }
@@ -143,7 +143,7 @@ open class MobileAPI {
         callback(status, json, response.error)
     }
     
-    open func handleUnauthorizedApiCall(key: String, url:String, method: HTTPMethod, params: Parameters? = nil, encoding: ParameterEncoding = JSONEncoding.default, callbackHandler: @escaping JSON_RESPONSE) {
+    open func handleUnauthorizedApiCall(key: String = "", url: String = "", method: HTTPMethod, params: Parameters? = nil, encoding: ParameterEncoding = JSONEncoding.default, callbackHandler: @escaping JSON_RESPONSE) {
         let req = Alamofire.request(url, method: method, parameters: params, encoding: encoding).responseJSON { (response) in
             RequestManager.shared.removeRequest(forKey: key)
             self.handleResponse(response: response, callback: callbackHandler)
@@ -151,7 +151,7 @@ open class MobileAPI {
         RequestManager.shared.makeRequest(withKey: key, request: req)
     }
     
-    open func handleAuthorizedApiCall(key: String, url: String, method: HTTPMethod, params: Parameters? = nil, encoding: ParameterEncoding = JSONEncoding.default, callbackHandler: @escaping JSON_RESPONSE) {
+    open func handleAuthorizedApiCall(key: String = "", url: String, method: HTTPMethod, params: Parameters? = nil, encoding: ParameterEncoding = JSONEncoding.default, callbackHandler: @escaping JSON_RESPONSE) {
         let req = Alamofire.request(url, method: method, parameters: params, encoding: encoding, headers: _headers).responseJSON { (response) in
             RequestManager.shared.removeRequest(forKey: key)
             self.handleResponse(response: response, callback: callbackHandler)
@@ -159,4 +159,7 @@ open class MobileAPI {
         RequestManager.shared.makeRequest(withKey: key, request: req)
     }
     
+    open func cancelRequest(key: String) -> Bool {
+        return RequestManager.shared.cancelRequest(forKey: key)
+    }
 }
